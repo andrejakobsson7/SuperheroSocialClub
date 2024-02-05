@@ -20,7 +20,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Batman",
 				SecretIdentity = "Bruce Wayne",
 				Superpowers = new List<string> { "Intelligence", "Martial Arts", "Gadgetry" },
-				Image = "2.jpeg"
+				Image = "2.jpg"
 			},
 			new Superhero
 			{
@@ -28,7 +28,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Spider-Man",
 				SecretIdentity = "Peter Parker",
 				Superpowers = new List<string> { "Wall-Crawling", "Spider-Sense", "Super Agility" },
-				Image = "3.jpeg"
+				Image = "3.jpg"
 			},
 			new Superhero
 			{
@@ -36,7 +36,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Wonder Woman",
 				SecretIdentity = "Diana Prince",
 				Superpowers = new List<string> { "Super Strength", "Lasso of Truth", "Flight" },
-				Image = "4.jpeg"
+				Image = "4.jpg"
 			},
 			new Superhero
 			{
@@ -44,7 +44,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Iron Man",
 				SecretIdentity = "Tony Stark",
 				Superpowers = new List<string> { "Powered Armor", "Genius-level Intellect", "Flight" },
-				Image = "5.jpeg"
+				Image = "5.jpg"
 			},
 			new Superhero
 			{
@@ -52,7 +52,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Thor",
 				SecretIdentity = "Thor Odinson",
 				Superpowers = new List<string> { "God-like Strength", "Control over Lightning", "Mjolnir" },
-				Image = "6.jpeg"
+				Image = "6.jpg"
 			},
 			new Superhero
 			{
@@ -68,7 +68,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Captain America",
 				SecretIdentity = "Steve Rogers",
 				Superpowers = new List<string> { "Superhuman Strength", "Shield Mastery", "Enhanced Agility" },
-				Image = "8.jpeg"
+				Image = "8.jpg"
 			},
 			new Superhero
 			{
@@ -76,7 +76,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Black Widow",
 				SecretIdentity = "Natasha Romanoff",
 				Superpowers = new List<string> { "Expert Martial Artist", "Espionage Skills", "Master Marksman" },
-				Image = "9.jpeg"
+				Image = "9.jpg"
 			},
 			new Superhero
 			{
@@ -84,7 +84,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Green Lantern",
 				SecretIdentity = "Hal Jordan",
 				Superpowers = new List<string> { "Power Ring", "Flight", "Energy Projection" },
-				Image = "10.jpeg"
+				Image = "10.jpg"
 			},
 			new Superhero
 			{
@@ -92,7 +92,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Flash",
 				SecretIdentity = "Barry Allen",
 				Superpowers = new List<string> { "Super Speed", "Time Travel", "Speed Force Connection" },
-				Image = "11.jpeg"
+				Image = "11.jpg"
 			},
 			new Superhero
 			{
@@ -100,7 +100,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Aquaman",
 				SecretIdentity = "Arthur Curry",
 				Superpowers = new List<string> { "Super Strength", "Control over Sea Life", "Underwater Adaptation" },
-				Image = "12.jpeg"
+				Image = "12.jpg"
 			},
 			new Superhero
 			{
@@ -108,7 +108,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Doctor Strange",
 				SecretIdentity = "Stephen Strange",
 				Superpowers = new List<string> { "Mystical Arts", "Time Manipulation", "Dimensional Travel" },
-				Image = "13.jpeg"
+				Image = "13.jpg"
 			},
 			new Superhero
 			{
@@ -116,7 +116,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Ant-Man",
 				SecretIdentity = "Scott Lang",
 				Superpowers = new List<string> { "Size Manipulation", "Control over Ants", "Master Thief" },
-				Image = "14.jpeg"
+				Image = "14.jpg"
 			},
 
 			new Superhero
@@ -125,7 +125,7 @@ namespace SuperheroSocialClub.Database
 				Name = "Black Panther",
 				SecretIdentity = "T'Challa",
 				Superpowers = new List<string> { "Superhuman Strength", "Enhanced Senses", "Vibranium Suit" },
-				Image = "15.jpeg"
+				Image = "15.jpg"
 			}
 		};
 		public static void AddSuperhero(Superhero superheroToAdd)
