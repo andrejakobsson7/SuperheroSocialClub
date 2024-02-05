@@ -128,5 +128,34 @@ namespace SuperheroSocialClub.Database
 				Image = "15.jpeg"
 			}
 		};
+		public static void AddSuperhero(Superhero superheroToAdd)
+		{
+			Superheroes.Add(superheroToAdd);
+		}
+		public static bool DeleteSuperhero(int id)
+		{
+			Superhero? superheroToDelete = Superheroes.FirstOrDefault(s => s.Id == id);
+			if (superheroToDelete != null)
+			{
+				Superheroes.Remove(superheroToDelete);
+				return true;
+			}
+			return false;
+		}
+
+		public static bool UpdateSuperhero(int id, Superhero updatedSuperhero)
+		{
+			Superhero? superheroToUpdate = Superheroes.FirstOrDefault(s => s.Id == id);
+			if (superheroToUpdate != null)
+			{
+				superheroToUpdate.Id = updatedSuperhero.Id;
+				superheroToUpdate.Name = updatedSuperhero.Name;
+				superheroToUpdate.SecretIdentity = updatedSuperhero.SecretIdentity;
+				superheroToUpdate.Image = updatedSuperhero.Image;
+				superheroToUpdate.Superpowers = updatedSuperhero.Superpowers;
+				return true;
+			}
+			return false;
+		}
 	}
 }
