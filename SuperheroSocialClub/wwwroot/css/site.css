@@ -20,3 +20,49 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.superhero-card img{
+    width: 200px;
+    height: 300px;
+}
+
+.superhero-card img:hover{
+    opacity: 0.5;
+}
+.new-superhero-form {
+    width: 50%;
+    height:75%;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding:2%;
+}
+.new-superhero-form input {
+    margin: 5%;
+}
+.new-superhero-form label {
+    margin: 5%;
+}
+#add-superhero-btn {
+    margin-left:auto;
+    margin-right:auto;
+    width:30%;
+    }
+#add-superpower-btn {
+    background-color: transparent;
+    border-color:transparent;
+    color: blue;
+    margin-bottom: 5%;
+}
+.remove-superhero-input {
+    background-color: transparent;
+    border-color: transparent;
+    color: red;
+}
+#new-superhero-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+    border-radius:10%;
+    margin-bottom: 5%;
+}

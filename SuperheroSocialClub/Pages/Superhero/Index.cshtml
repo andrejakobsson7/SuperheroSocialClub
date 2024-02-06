@@ -2,3 +2,13 @@
 @model SuperheroSocialClub.Pages.Superhero.IndexModel
 @{
 }
+<div class="row h-100">
+	@foreach (var superhero in Model.AllSuperheroes)
+	{
+		<div class="col-12 col-sm-7 col-md-6 col-lg-4 col-xl-2 superhero-card">
+			<a asp-page="/Superhero/Details" asp-route-id="@superhero.Id"><img src="~/Images/@superhero.Image" /></a>		
+			<h4>@superhero.Name</h4>
+		</div>
+	}
+</div>
+
