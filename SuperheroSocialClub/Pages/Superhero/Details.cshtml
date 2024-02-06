@@ -1,0 +1,46 @@
+﻿@page
+@model SuperheroSocialClub.Pages.Superhero.DetailsModel
+@{
+}
+
+<h1>Le Superheroes - Made in Murica, the land of FREEDOM</h1>
+
+@foreach (var superhero in Model.Superheros)
+{
+    <div>
+        <div class="card">
+            <img src="~/Images/@superhero.Image" class="card-img-top" alt="@superhero.Name" style="max-height: 500px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">@superhero.Name</h5>
+                <p class="card-text">Secret Identity: @superhero.SecretIdentity</p>
+                <p class="card-text">Superpowers: @string.Join(", ", superhero.Superpowers)</p>
+                <div class="button-group">
+                    <a href="~/Superhero/Edit?id=@superhero.Id" class="btn btn-primary">Edit</a>
+                    <form method="post">
+                        <input type="hidden" name="id" value="@superhero.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+<style>
+    .button-group {
+        display: flex;
+        gap: 10px;
+    }
+
+    .button-group button {
+            margin-right: 10px; 
+    }
+</style>
+
+
+@* Gör Edit logik.
+
+
+
+Gör Delete logik.  *@

@@ -1,7 +1,7 @@
 ﻿using SuperheroSocialClub.Models;
 
-namespace SuperheroSocialClub.Database
-{
+namespace SuperheroSocialClub.Database;
+
 	public static class SuperheroRepo
 	{
 		public static List<Superhero> Superheroes { get; set; } = new()
