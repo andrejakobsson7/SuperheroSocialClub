@@ -3,9 +3,10 @@
 @{
 }
 <div class="row h-100">
-	<form method="post" class="new-superhero-form">
+	<form method="post" class="new-superhero-form" enctype="multipart/form-data">
 		<div id="new-superhero-image-container" class="row h-25">
-			<img />
+			<img id="new-superhero-image"/>
+			<hr />
 		</div>
 		<div class="col-12 d-flex">
 			<div class="col-6">
@@ -16,21 +17,20 @@
 
 			</div>
 			<div class="col-6" >
-				<input class="d-block" type="file" placeholder="Select image" />
+				<input class="d-block" type="file" accept="image/*" id="new-superhero-image-input"  asp-for="@Model.Image" />
 
-				<input class="d-block" type="text" placeholder="Name" />
-				<input class="d-block" type="text" placeholder="Secret identity" />
+				<input class="d-block" type="text" placeholder="Name" id="new-superhero-name-input" asp-for="@Model.Name" />
+				<input class="d-block" type="text" placeholder="Secret identity" id="new-superhero-secretidentity-input" asp-for="@Model.SecretIdentity" />
 				<div id="add-superpower-container">
-					<input class="d-block" type="text" placeholder="Superpower" id="superpower-0" />
+					<input class="d-block" type="text" placeholder="Superpower" id="superpower-0" name="Superpowers[0]"/>
 				</div>
 				<button id="add-superpower-btn">+ Add superpower</button>
 
 			</div>
 		</div>
-		<a id="add-superhero-btn"class="btn btn-primary d-flex justify-content-center">Add superhero</a>
+		<input id="add-superhero-btn" class="btn btn-primary d-flex justify-content-center" type="submit" value="Add superhero"/>
 
 	</form>
 
 	</div>
 </div>
-

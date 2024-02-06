@@ -6,17 +6,26 @@
 //Selector
 let addSuperpowerBtn = document.querySelector("#add-superpower-btn")
 let superpowerContainer = document.querySelector("#add-superpower-container")
+let superheroImageInput = document.getElementById("new-superhero-image-input")
+let superheroImage = document.getElementById("new-superhero-image");
 let clickCounter = 0;
 
 //Event listener
-addSuperpowerBtn.addEventListener("click", addSuperpowerInput);
+if (addSuperpowerBtn != null) {
+    addSuperpowerBtn.addEventListener("click", addSuperpowerInput);
+
+}
+if (superheroImageInput != null) {
+    superheroImageInput.addEventListener("change", previewSuperheroImage);
+
+}
 
 //Functions
 function addSuperpowerInput() {
     clickCounter++;
     event.preventDefault();
     superpowerContainer.innerHTML += `
-    <input type="text" placeholder="Superpower" id="superpower-${clickCounter}" />
+    <input type="text" placeholder="Superpower" id="superpower-${clickCounter}" name="Superpowers[${clickCounter}]"/>
     <a class="btn remove-superhero-input d-block" id="remove-superhero-input-${clickCounter}" onclick="deleteSuperheroInput(${clickCounter})"> x </a>
     `
 }
@@ -26,4 +35,10 @@ function deleteSuperheroInput(id) {
     let superpowerDeletebtn = document.querySelector(`#remove-superhero-input-${id}`)
     superpowerInputToDelete.remove();
     superpowerDeletebtn.remove();
+}
+
+function previewSuperheroImage() {
+    let uploadedImage = superheroImageInput.files[0];
+    superheroImage.src = URL.createObjectURL(uploadedImage);
+/*    superheroImage.onload(URL.revokeObjectURL(superheroImage.src));*/
 }
